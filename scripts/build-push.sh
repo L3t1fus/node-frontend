@@ -5,10 +5,10 @@ set -x
 
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
-docker build -t tiangolo/node-frontend:10 .
+docker build -t prophetdev/node-frontend:16 .
 
-docker build -t tiangolo/node-frontend:latest .
+docker build -t prophetdev/node-frontend:latest .
 
-docker push tiangolo/node-frontend:10
+docker push prophetdev/node-frontend:16
 
-docker push tiangolo/node-frontend:latest
+docker push prophetdev/node-frontend:latest
